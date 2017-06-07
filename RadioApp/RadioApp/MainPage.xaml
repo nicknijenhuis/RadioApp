@@ -7,5 +7,5 @@
 	<Label Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-
+    <Button Text="Play" Clicked="Button_OnClicked"></Button>
 </ContentPage>

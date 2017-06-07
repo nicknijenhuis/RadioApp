@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Plugin.MediaManager;
 using Xamarin.Forms;
 
 namespace RadioApp
@@ -12,6 +9,11 @@ namespace RadioApp
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private async void Button_OnClicked(object sender, EventArgs e)
+        {
+            await CrossMediaManager.Current.Play("http://www.montemagno.com/sample.mp3");
         }
     }
 }
